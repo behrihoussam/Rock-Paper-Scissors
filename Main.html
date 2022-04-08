@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/44e4196b37.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Main.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <h1>ROCK PAPER SCISSORS</h1>
+    <h1 id="result">Click on Rock, Paper or Scissors to start</h1>
+    <div class="main">
+      <div class="player">
+        <i class="fa-solid fa-hand-back-fist" id="rock"></i>
+        <i class="fa-solid fa-hand" id="paper"></i>
+        <i class="fa-solid fa-hand-scissors" id="scissors"></i>
+      </div>
+      <div class="line"></div>
+      <div class="result">
+        <i class="fa-solid fa-hand-back-fist visible res" id="playerRock"></i>
+        <i class="fa-solid fa-hand visible res" id="playerPaper"></i>
+        <i class="fa-solid fa-hand-scissors visible res" id="playerScissors"></i>
+        <i class="fa-solid fa-hand computer visible" id="computerPaper"></i>
+        <i class="fa-solid fa-hand-back-fist computer visible"
+          id="computerRock"></i>
+        <i class="fa-solid fa-hand-scissors computer visible"
+          id="computerScissors"></i>
+      </div>
+    </div>
+    <div class="score">
+      <h1>You <span id="playerScore">0</span> - <span id="computerScore">0</span> Computer</h1>
+    </div>
+    <buttton id="reset">Reset the score</buttton>
+    <script src="Main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2rem;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 7% 1fr 1fr 20%;
+  place-items: center;
+}
+.main {
+  width: 50%;
+  font-size: 8rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10% 1fr;
+  grid-gap: 1rem;
+  place-items: center;
+}
+.line {
+  width: 100%;
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: hsl(183, 100%, 15%);
+}
+#result {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+.fa-solid {
+  background-color: hsla(186, 14%, 43%, .1);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.fa-solid:hover {
+  background-color: hsla(186, 14%, 43%,   .4);
+}
+.res {
+  color: hsl(172, 67%, 45%);
+  background-color: hsl(183, 100%, 15%);
+}
+.fa-hand-scissors {
+  transform: rotate(90deg);
+}
+.computer {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+.computer:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsla(172, 67%, 45%, .5);
+}
+#reset {
+  position: absolute;
+  width: 10%;
+  cursor: pointer;
+  padding: 2rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 2rem;
+  left: 50px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(183, 100%, 15%);
+}
+#reset:hover {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+.visible {
+  display: none;
+}
+i {
+  cursor: pointer;
+}
+span {
+  color: hsl(0, 0%, 100%);
+}
